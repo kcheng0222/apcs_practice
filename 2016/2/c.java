@@ -5,7 +5,6 @@ public List<LogMessage> removeMessages(String keyword){
 	while(i < messageList.size()){
 		if(messageList.get(i).containsWord(keyword)){
 			ans.add(messageList.remove(i));
-
 		}
 		else{
 			i += 1
