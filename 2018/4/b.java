@@ -8,6 +8,7 @@ public static boolean isLatin(int[][] square){
             return false;
         }
     }
+    
     for(int c = 0; c < square.length; c++){
         if(!hasAllValues(square[0], getColumn(square, c))){
             return false;
@@ -15,5 +16,4 @@ public static boolean isLatin(int[][] square){
     }
 
     return true;
-
 }
