@@ -9,7 +9,6 @@ public boolean simulate(){
         if(distance < 0){
             return true;
         }
-
     }
     return false;
 }
