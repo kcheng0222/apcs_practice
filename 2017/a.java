@@ -4,10 +4,8 @@ public Digits(int num){
     if(num == 0){ // special case
         digitList.add(0);
     }
-    else{
-        while(num > 0){
-            digitList.add(0, num % 10);
-            num = num / 10;
-        }
+    while(num > 0){
+        digitList.add(0, num % 10);
+        num = num / 10;
     }
 }
