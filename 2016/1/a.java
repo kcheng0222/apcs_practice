@@ -9,6 +9,7 @@ public class RandomStringChooser{
     }
     
     public String getNext(){
+        
         if(myStrings.size() == 0){
             return "NONE";
         }
