@@ -9,11 +9,9 @@ public class RandomStringChooser{
     }
     
     public String getNext(){
-        
         if(myStrings.size() == 0){
             return "NONE";
         }
-        
         Random gen = new Random();
         
         return myStrings.remove((new Random()).nextInt(myStrings.size()));
