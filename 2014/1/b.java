@@ -6,9 +6,10 @@ public static void scrambleOrRemove(List<String> wordList){
         String y = scrambleWord(x);
         if(!x.equals(y)){
             wordList.set(i, y);
+            i += 1;
         }
         else{
-            i += 1;
+            wordList.remove(i);
         }
     }
     return wordList;
