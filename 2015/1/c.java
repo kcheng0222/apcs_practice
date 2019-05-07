@@ -1,13 +1,9 @@
 public static boolean isDiverse(int[][] arr2D){
     
-    List<Integer> sums = new ArrayList<Integer>();
-    for(int i = 0; i < arr2D.length; i++){
-        int s = arraySum(arr2D[i]);
-        
-        sums[i] = s;
-        
-        for(int y = 0; y < sums.length; y++){
-            if(sums[y] == s){
+    int[] sums = rowSums(arr2D);
+    for(int x = 0; x < arr2D.length-1; x++){
+        for(int y = x+1; y < arr2D.length; y++){
+            if(sums[x] == sums[y]){
                 return false;
             }
         }
