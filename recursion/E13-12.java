@@ -15,7 +15,6 @@ class SubstringGenerator
         for(int i = 1; i <= s.length(); i++){
         	arr.add(s.substring(0, i));
         }
-
         return calc(s.substring(1), arr);
     }
     
