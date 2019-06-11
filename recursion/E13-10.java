@@ -20,7 +20,5 @@ public class PolygonArea{
 
         System.out.println("Area:")
         System.out.println(calculateArea(x, y, 0));
-
     }
-
 }
