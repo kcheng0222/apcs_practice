@@ -1,5 +1,5 @@
 public class Test{
-    public String reverse(String s){
+    public static String reverse(String s){
         if(s.length() == 1){
             return s;
         }
