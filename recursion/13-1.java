@@ -1,5 +1,5 @@
 public class Tester{
-    public int gcd(int a, int b){
+    public static int gcd(int a, int b){
         if(a == 0){
             return b;
         }
