@@ -1,6 +1,6 @@
 public class PolygonArea{
     public static double calculateArea(double[] x, double[] y, int i){
-        if(i == x.length - 2){
+        if(i >= x.length - 2){
             return 0;
         }
         double a = x[i] * y[i+1] + x[i+1] * y[i] + x[i+2] * y[i];
@@ -18,7 +18,7 @@ public class PolygonArea{
         double[] x = {1, 2, 3, 4, 5, 6};
         double[] y = {1, 2, 3, 4, 5, 6};
 
-        System.out.println("Area:")
+        System.out.println("Area:");
         System.out.println(calculateArea(x, y, 0));
     }
 }
